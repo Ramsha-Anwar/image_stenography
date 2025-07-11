@@ -1,0 +1,10 @@
+^C:\USERS\RAMSHA ANWAR\DESKTOP\STENOGRAPHY PROJECT\BUILD\CMAKEFILES\359439F123AAF9CF9091E8B6F4068098\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" "-SC:/Users/Ramsha Anwar/Desktop/stenography project" "-BC:/Users/Ramsha Anwar/Desktop/stenography project/build" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "C:/Users/Ramsha Anwar/Desktop/stenography project/build/SteganographyImGui.sln"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
